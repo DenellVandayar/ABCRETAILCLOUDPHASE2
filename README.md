@@ -73,19 +73,22 @@ Azure Functions were implemented to automate and manage backend operations, incl
 ## Screenshots
 
 ### Azure Functions
-![Azure Functions](screenshots/azure-functions.png)
+<img width="1366" height="768" alt="Screenshot 2024-09-28 152928" src="https://github.com/user-attachments/assets/749a376f-ca6e-427f-aeb1-2a80d86f0cdb" />
+<img width="1366" height="768" alt="Screenshot 2024-09-28 153217" src="https://github.com/user-attachments/assets/b15c2235-2bc7-49f8-94ba-25931699d4ad" />
+<img width="1366" height="768" alt="Screenshot 2024-09-28 153245" src="https://github.com/user-attachments/assets/0e065551-1fc9-46af-99c2-288e2f733c0e" />
+<img width="1366" height="768" alt="Screenshot 2024-09-28 153319" src="https://github.com/user-attachments/assets/497c7137-d35f-4067-a123-ac8b3aff1116" />
 
-### Azure Queue Trigger
-![Queue Trigger](screenshots/queue-trigger.png)
 
 ### Azure Storage Services
-![Blob Storage](screenshots/blob-storage.png)
-![Table Storage](screenshots/table-storage.png)
-![Queue Storage](screenshots/queue-storage.png)
+<img width="1366" height="768" alt="Screenshot 2024-08-29 121454" src="https://github.com/user-attachments/assets/c65e0b41-0534-47a5-b935-796ed9187f13" />
+<img width="1366" height="768" alt="Screenshot 2024-08-29 121534" src="https://github.com/user-attachments/assets/861cd58e-eb17-415b-9aa8-d1e54244d5e0" />
+<img width="1366" height="768" alt="Screenshot 2024-08-29 123457" src="https://github.com/user-attachments/assets/258c0e80-683d-4dfa-9c12-5fcc2cdfa4df" />
+
 
 ### Application UI
-![Catalog Page](screenshots/catalog-page.png)
-![Cart Page](screenshots/cart-page.png)
+<img width="1366" height="625" alt="Screenshot 2024-08-29 122443" src="https://github.com/user-attachments/assets/242d876e-1a29-4264-be1f-14f56508b7ec" />
+<img width="1366" height="625" alt="Screenshot 2024-08-29 120550" src="https://github.com/user-attachments/assets/b5492be8-589b-4024-b61b-b7f0db81a7a7" />
+
 
 ---
 
