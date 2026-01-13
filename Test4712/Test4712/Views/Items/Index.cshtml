@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewData["Title"] = "Items";
+}
+@model IEnumerable<Test4712.Models.Item>
+
+<h1>Items</h1>
+<a href="@Url.Action("AddItem","Items")" class="btn btn-primary">Add New Item</a>
+<a href="@Url.Action("ManageImages","Images")" class="btn btn-primary">Manage Item Images</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@string.Format("{0:C}", item.Price)</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.ImageUrl))
+                    {
+                        <img src="@item.ImageUrl" alt="@item.Name" style="width:100px;height:100px;" />
+                    }
+                </td>
+                <td>
+                    <form asp-action="DeleteItem" method="post" style="display:inline;">
+                        <input type="hidden" name="PartitionKey" value="@item.PartitionKey" />
+                        <input type="hidden" name="RowKey" value="@item.RowKey" />
+
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this item')">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

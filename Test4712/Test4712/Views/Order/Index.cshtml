@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<Test4712.Models.Item>
+
+    <h1>Available Items!</h1>
+    <hr/>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="@item.ImageUrl" class="card-img-top" style="width:100%;height:300px;" alt="@item.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text"><strong>Price:</strong> $@item.Price</p>
+                        <a href="@Url.Action("Order", "Order", new { itemId = item.Item_Id })" class="btn btn-primary">Order</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

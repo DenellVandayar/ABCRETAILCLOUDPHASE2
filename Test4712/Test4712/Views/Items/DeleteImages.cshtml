@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model List<string>
+
+@{
+    ViewData["Title"] = "Delete Images";
+}
+
+<h2>Manage Images</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Image Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var blobName in Model)
+        {
+            <tr>
+                <td>@blobName</td>
+                <td>
+                    <form asp-action="DeleteBlob" method="post">
+                        <input type="hidden" name="blobName" value="@blobName" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
